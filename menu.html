@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu</title>
+    <link rel="icon" type="image/x-icon" href="Icons/Logo.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- css file -->
+    <link rel="stylesheet" type="text/css" href="Design2.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<!-- header start -->
+	<header class="header">
+		<!-- logo -->
+		<a href="BAUTISTA.HTML" class="logo">
+		<img src="header.png">
+		</a>
+
+        <!-- nav bar start-->
+        <nav class="navbar">
+        	 <input type="checkbox" id="check">
+        	    <label for="check" class="check-btn">
+        	    	<i class="fas fa-bars"></i>
+                </label>
+        	<ul>
+        	  <li><a href="BAUTISTA.HTML">Home</a></li>
+              <li><a class="active" href="menu.html">Menu</a></li>
+              <li><a class="active" href="3rd.html">about Us</a><li>
+        	<ul>
+        <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+        </nav>
+        <!-- nav bar end -->
+
+
+        <!-- hyperlink with icons (search, cart, profile, menu button) -->
+        <div class= "icons">
+        <div class="cart-container" onmouseover="showCartForm()" onmouseout="hideCartForm()">
+            <a href="4-cart.html">
+            <div class="fas fa-shopping-cart" id="cartButton"></div>
+        </a>
+            <div class="cart-form" id="cartForm">
+                <form>
+                    <div id="cartitems"></div>
+                    <div id="total-price">Total Price: P<span id="totalPrice">0.00</span></div>
+                </form>
+            </div>
+        </div>    
+        <!-- hyperlink with icons (search, cart, profile, menu button) -->
+    </header>
+    <!-- header end -->
+
+    <!-- menu section -->
+<section class="menu" id="menu">
+	<h1 style="text-align: center; font-size: 80px;" class="heading">OUR <span>MENU</span></h1>
+
+	<p style="text-align: center; font-size: 50px;"class="heading-description">choose in our one of the best pasta you wanted to taste!</p>
+
+	<div class="category-text">
+
+        <h3>Pasta</h3>
+    </div>
+
+<div class="menu">
+    <div class="container menu-section">
+
+        <!-- product 1 -->
+            <div class="menu-box">
+                <div class="menu-img">
+                    <img src="spag.jpg" alt="The Best Spaghetti and Meat Sauce">
+                </div>
+                <div class="menu-content">
+                    <h3>Spaghetti</h3>
+                    <p>This Red Wine Meat Sauce is the best spaghetti meat sauce. Our spaghetti pasta is is cooked al dente, then topped with tomato-based sauce made with red wine, parmesan cheese, a blend of flavor-bursting herbs, and perfectly seasoned ground beef.</p>
+                    <div onclick="addToCart('plate', 'P90.00', 'Products/No BG/frappe_mocha.pn', 'Item3-s'); return false;">
+                <button id="item1-s">Plate <span>P90.00</span></button> <!-- SMALL -->
+                </div>
+                <div onclick="addToCart('Cook', 'P150.00', 'Products/No BG/frappe_mocha.png', 'item1-m'); return false;">
+                    <button id="itemi-m">Cook <span>P150.00</span></button> <!-- MEDIUM-->
+                </div>
+            </div>
+        </div>
+
+        <!-- product 2 -->
+            <div class="menu-box">
+                <div class="menu-img">
+                    <img src="garlic.jpg" alt="Garlic Parmesan Chicken Alfredo">
+                </div>
+                <div class="menu-content">
+                    <h3>Garlic Parmesan</h3>
+                    <p>Garlic parmesan chicken alfredo is a classic Italian pasta dish that is made with a creamy white sauce. The sauce is typically made with heavy cream, parmesan cheese, and seasonings..</p>
+            	<div onclick="addToCart('plate', 'P90.00', 'Products/No BG/frappe_mocha.pn', 'Item2-s'); return false;">
+            	<button id="item1-s">Plate <span>P90.00</span></button> <!-- SMALL -->
+            	</div>
+            	<div onclick="addToCart('Cook', 'P150.00', 'Products/No BG/frappe_mocha.png', 'item1-m'); return false;">
+            		<button id="itemi-m">Cook <span>P150.00</span></button> <!-- MEDIUM-->
+            	</div>
+            </div>
+        </div>
+
+        <!-- product 3 -->
+         <div class="menu-box">
+                <div class="menu-img">
+                    <img src="pesto.jpg" alt="Pesto Pasta">
+                </div>
+                <div class="menu-content">
+                    <h3>Shrimp fettuccine</h3>
+                    <p>Creamy Shrimp Fettuccine Pasta, draped in a homemade Alfredo sauce, offers a luxurious twist on the classic Italian dish.</p>
+                    <div onclick="addToCart('plate', 'P90.00', 'Products/No BG/frappe_mocha.pn', 'Item3-s'); return false;">
+                <button id="item1-s">Plate <span>P90.00</span></button> <!-- SMALL -->
+                </div>
+                <div onclick="addToCart('Cook', 'P150.00', 'Products/No BG/frappe_mocha.png', 'item1-m'); return false;">
+                    <button id="itemi-m">Cook <span>P150.00</span></button> <!-- MEDIUM-->
+                </div>
+            </div>
+        </div>
+
+        <!-- produt 4 -->
+        <div class="menu-box">
+                <div class="menu-img">
+                    <img src="Buca.jpg" alt="creamy shrimp fettuccine pasta">
+                </div>
+                <div class="menu-content">
+                    <h3>Pestoshrimp fettuccine</h3>
+                    <p>It will thin out the pesto so it coats everything nicely and creates a glossy pesto sauce that coats every bit of pasta.Creamy Shrimp Fettuccine Pasta, draped in a homemade Alfredo sauce, offers a luxurious twist on the classic Italian dish.</p>
+                    <div onclick="addToCart('plate', 'P90.00', 'Products/No BG/frappe_mocha.pn', 'Item3-s'); return false;">
+                <button id="item1-s">Plate <span>P90.00</span></button> <!-- SMALL -->
+                </div>
+                <div onclick="addToCart('Cook', 'P150.00', 'Products/No BG/frappe_mocha.png', 'item1-m'); return false;">
+                    <button id="itemi-m">Cook <span>P150.00</span></button> <!-- MEDIUM-->
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- product 5 -->
+        <div class="menu-box">
+                <div class="menu-img">
+                    <img src="srimp.jpg" alt="Bucatini Amatriciana">
+                </div>
+                <div class="menu-content">
+                    <h3>Bucatini</h3>
+                    <p>Very simple, very summery Bucatini Amatriciana. A classic Italian pasta made with dried bucatini pasta, cherry tomatoes, guanciale (or pancetta), rosemary, Pecorino cheese, and plenty of black pepper.</p>
+                <div onclick="addToCart('plate', 'P90.00', 'Products/No BG/frappe_mocha.pn', 'Item3-s'); return false;">
+                <button id="item1-s">Plate <span>P90.00</span></button> <!-- SMALL -->
+                </div>
+                <div onclick="addToCart('Cook', 'P150.00', 'Products/No BG/frappe_mocha.png', 'item1-m'); return false;">
+                    <button id="itemi-m">Cook <span>P150.00</span></button> <!-- MEDIUM-->
+                </div>
+            </div>
+        </div>
+    
+            
+        <!-- Add more menu items here with the same structure -->
+    </div>
+
+        <div class="category-text"><h3>Drinks</h3></div>
+
+    <div class="container menu-section">
+
+        <!-- product 1-->
+        <div class="menu-box">
+            <div class="menu-img">
+                <img src="pink.jpg" alt="Watermelon Lemonade Without Added Sugar">
+            </div>
+            <div class="menu-content">
+                <h3>Watermelon Lemonade</h3>
+                <p>Watermelon juice is incredibly sweet, so I chose to use it as lemonade base instead of water.</p>
+                <div onclick="addToCart('cool', 'P95.00', 'Products/No BG/frappe_mocha.png', 'item1-m'); return false;">
+                    <button id="itemi-m">Cool <span>P95.00</span></button> <!-- MEDIUM-->
+                </div>
+            </div>
+        </div>
+
+        <!-- product 2-->
+        <div class="menu-box">
+            <div class="menu-img">
+                <img src="limo.jpg" alt="Limonana">
+            </div>
+            <div class="menu-content">
+                <h3>Limonana</h3>
+                <p>Limonana is a slushy frozen mint lemonade recipe from the Middle East. It's sweet, tart, and refreshing, and perfect for cooling down with on a hot day!</p>
+                <div onclick="addToCart('cool', 'P95.00', 'Products/No BG/frappe_mocha.png', 'item1-m'); return false;">
+                    <button id="itemi-m">Cool <span>P95.00</span></button> <!-- MEDIUM-->
+                </div>
+            </div>
+        </div>
+
+         <!-- product 3-->
+        <div class="menu-box">
+            <div class="menu-img">
+                <img src="lemo.jpg" alt="Creamy Lemonade">
+            </div>
+            <div class="menu-content">
+                <h3>Creamy Lemonade</h3>
+                <p>Our creamy lemonade is like a summer day in a glass, with a fun twist! This is basically just an easy lemonade recipe similar to what you already make at home but with a smooth, velvety upgrade.</p>
+                <div onclick="addToCart('cool', 'P95.00', 'Products/No BG/frappe_mocha.png', 'item1-m'); return false;">
+                    <button id="itemi-m">Cool <span>P95.00</span></button> <!-- MEDIUM-->
+                </div>
+            </div>
+        </div>
+
+         <!-- product 4-->
+        <div class="menu-box">
+            <div class="menu-img">
+                <img src="brown.jpg" alt="Brownie Milkshake">
+            </div>
+            <div class="menu-content">
+                <h3>Brownie Milkshake</h3>
+                <p>This Brownie Milkshake is a super decadent treat every chocolate lover should taste at least once! Loaded with brownie chunks and decorated with ganache, this milkshake is packed with delicious chocolate flavour.</p>
+                <div onclick="addToCart('cool', 'P95.00', 'Products/No BG/frappe_mocha.png', 'item1-m'); return false;">
+                    <button id="itemi-m">Cool <span>P95.00</span></button> <!-- MEDIUM-->
+                </div>
+            </div>
+        </div>
+
+         <!-- product 4-->
+        <div class="menu-box">
+            <div class="menu-img">
+                <img src="iced.jpg" alt="Chocolate Ganache shake">
+            </div>
+            <div class="menu-content">
+                <h3>Chocolate Ganache</h3>
+                <p>iced coffee is a cold version of your favourite coffee, but it's not simply a coffee that has been left to cool.</p>
+                <div onclick="addToCart('cool', 'P95.00', 'Products/No BG/frappe_mocha.png', 'item1-m'); return false;">
+                    <button id="itemi-m">Cool <span>P95.00</span></button> <!-- MEDIUM-->
+                </div>
+            </div>
+        </div>
+
+</section>
+    <!-- Menu Section End -->
+
+    <!--footer start -->
+    <section class="footer">
+        <div class="container">
+            <div class="footer-box-1">
+                <h3> Location </h3>
+                <div class="footer-loc">
+                    <a href="https://www.google.com/maps/place/TUP+-+College+of+Industrial Technology/@14.5873937,120.9848474,17z/data-land14h1!4003051139/crAcd461575:@x6247d29ffafode@18213d14.58734/140178.984847411662+gXzF11hfq2lnnk?hl=enkentry-ttu"target=_blank>College of Industrial Technology, 666. TUP,Ermita, Manila, 1000></a>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <h3>Newsletter</h3>
+                <p>Stay update with our latest</p>
+                <form>
+                    <input type="email" name="email" placeholder="name@gmail.com">
+                    <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+                <form>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p>Connect With Us On:</p>
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--footer end-->
+    </body>
+    </html> 

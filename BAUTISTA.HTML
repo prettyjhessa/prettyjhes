@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <title>HOME</title>
+     <link rel="icon" type="image/x-icon" href="Icons/logo.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- css file-->
+    <link rel="stylesheet" type="text/css" href="Design.css">
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="header">
+        <!--logo-->
+        <a href="BAUTISTA.HTML" class="logo">
+        <img src="header.png"width = 150 height= 150>
+        </a>
+
+        <!-- nav bar start-->
+        <nav class="navbar">
+             <input type="checkbox" id="check">
+                <label for="check" class="check-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            <ul>
+              <li><a href="BAUTISTA.HTML">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="3rd.html">About Us</a><li>
+            </ul>
+        <!--<div id="menu-btn" class="fas fa-bars"></div>-->
+        </nav>
+        <!-- nav bar end -->
+
+        <!-- hyperlink with icons (search, cart, profile, menu button) -->
+        <div class= "icons">
+            <a href="cart.html"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
+        </div>
+        <!-- hyperlink with icons (search, cart, profile, menu button) -->
+    </header>
+    <!-- header end -->
+
+    <div class="heading">
+        <h1>₊˚ପ⊹Pasta-khulit</h1>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="logo.png"width = 700 height= 600>
+            </div>
+            <div class="about-content">
+                <p>  we only allowed a walking greenflag on my online bussiness!!</p>
+                <p>Our pasta is already the best; the only thing left to do is choose what you want to taste. Come and savor our newest spaghetti you've ever tasted—we're all positive that your selection is the best. We would let you taste the pasta that you will never forget never ever in your life, so choose us for u to satisfy!And if you are looking for an unforgettable taste you'll never wanted to forget, why dont you try out best selling paste below, and for more pasta you'd like to taste.</p>
+            </div>
+        </section>
+<br>
+<br>
+<br>
+<br>
+
+<!-- menu section -->
+<section class="menu" id="menu">
+    <h1 class="heading">-ˏˋ♥̩͙♥̩̩̥͙♥̩̥̩ ⑅BEST<span>SELLING⑅ ♥̩̥̩♥̩̩̥͙♥̩͙ˊˎ</span></h1>
+    <p class="heading-description">OUR BEST UNFORGETTABLE TASTE YOU'LL EVER LIKED, CHOOSE NOW!</p>
+
+<div class="menu">
+    <div class="container menu-section">
+
+        <!-- product 1-->
+        <div class="menu-box">
+            <div class="menu-img">
+                <img src="pesto.jpg" alt="Pesto Pasta">
+            </div>
+            <div class="menu-content">
+                <h3>Shrimp fettuccine</h3>
+                <p>Creamy Shrimp Fettuccine Pasta, draped in a homemade Alfredo sauce, offers a luxurious twist on the classic Italian dish.</p>
+                <div onclick="addToCart('plate', 'P90.00', 'Products/No BG/frappe_mocha.pn', 'Item3-s'); return false;">
+                <button id="item1-s">Plate <span>P90.00</span></button> <!-- SMALL -->
+                </div>
+                <div onclick="addToCart('Cook', 'P150.00', 'Products/No BG/frappe_mocha.png', 'item1-m'); return false;">
+                    <button id="itemi-m">Cook <span>P150.00</span></button> <!-- MEDIUM-->
+                </div>
+            </div>
+        </div>
+
+<!-- product 2-->
+        <div class="menu-box">
+            <div class="menu-img">
+                <img src="limo.jpg" alt="Limonana">
+            </div>
+            <div class="menu-content">
+                <h3>Limonana</h3>
+                <p> Limonana is a slushy frozen mint lemonade recipe from the Middle East. It's sweet, tart, and refreshing, and perfect for cooling down with on a hot day!</p>
+                <div onclick="addToCart('cool', 'P95.00', 'Products/No BG/frappe_mocha.png', 'item1-m'); return false;">
+                    <button id="itemi-m">Cool <span>P95.00</span></button> <!-- MEDIUM-->
+                </div>
+            </div>
+        </div>
+              
+<!--footer start -->
+    <section class="footer">
+        <div class="container">
+            <div class="footer-box-1">
+                <h3> Location </h3>
+                <div class="footer-loc">
+                    <a href="https://www.google.com/maps/place/TUP+-+College+of+Industrial Technology/@14.5873937,120.9848474,17z/data-land14h1!4003051139/crAcd461575:@x6247d29ffafode@18213d14.58734/140178.984847411662+gXzF11hfq2lnnk?hl=enkentry-ttu"target=_blank>College of Industrial Technology, 666. TUP,Ermita, Manila, 1000></a>
+                </div>
+            </div>
+
+            <div class="footer-box">
+            	<h3>Newsletter</h3>
+            	<p>Stay update with our latest</p>
+            	<form>
+            		<input type="email" name="email" placeholder="name@gmail.com">
+            		<button type="submit"><i class="fa-solid fa-right-long"></i></button>
+            	<form>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p>Connect With Us On:</p>
+                <div class="icons">
+                	<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                	<a href="#"><i class="fa-brands fa-instagram"></i></a>
+                	<a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer end-->
+    </body>
+    </html> 
